@@ -22,22 +22,33 @@ The Stock Market Dashboard is a web application that provides real-time and hist
 - Node.js (v14 or later)
 - Python (v3.7 or later)
 - pip (Python package manager)
+- Git
 
 ## Installation
 
+1. Clone the repository:
+   ```
+   git clone https://github.com/marketcalls/stock-market-dashboard
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd stock-market-dashboard
+   ```
+
 ### Backend Setup
 
-1. Navigate to the backend directory:
+3. Navigate to the backend directory:
    ```
    cd backend
    ```
 
-2. Create a virtual environment:
+4. Create a virtual environment:
    ```
    python -m venv venv
    ```
 
-3. Activate the virtual environment:
+5. Activate the virtual environment:
    - On Windows:
      ```
      venv\Scripts\activate
@@ -47,38 +58,40 @@ The Stock Market Dashboard is a web application that provides real-time and hist
      source venv/bin/activate
      ```
 
-4. Install the required Python packages:
+6. Install the required Python packages:
    ```
    pip install flask yfinance pytz
    ```
 
-5. Start the Flask server:
+7. Start the Flask server:
    ```
    python app.py
    ```
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory:
+8. Open a new terminal window and navigate to the frontend directory:
    ```
-   cd frontend
+   cd ../frontend
    ```
 
-2. Install the required npm packages:
+9. Install the required npm packages:
    ```
    npm install
    ```
 
-3. Start the React development server:
-   ```
-   npm start
-   ```
+10. Start the React development server:
+    ```
+    npm start
+    ```
 
 ## Usage
 
 After starting both the backend and frontend servers, open your web browser and go to `http://localhost:3000` to view the Stock Market Dashboard.
 
 The dashboard will automatically update every 5 minutes with the latest data. The candlestick chart shows the S&P 500 index performance for the last trading day, with each candle representing a 5-minute interval.
+
+[The rest of the README content remains the same...]
 
 ## Project Structure
 
